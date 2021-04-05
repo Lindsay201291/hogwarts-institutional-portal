@@ -1,1 +1,38 @@
-<p>character-list works!</p>
+ <!-- <p>character-list works!</p>  -->
+<!-- <div>
+    <app-character-list
+      *ngFor="let character of characters"
+      [character]="character">
+    </app-character-list>
+</div> -->
+<!-- <div>
+    <p
+      *ngFor="let character of characters">
+      <span>{{(character.name)}}</span>
+    </p>
+</div> -->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Character List</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Patronus</th>
+            <th>Age</th>
+            <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let character of characters">
+            <td>{{character.name}}</td>
+            <td>{{character.patronus}}</td>
+            <td>{{character.age}}</td>
+            <td>{{character.image}}</td>
+            </tr>
+        </tbody>
+        </table>
+  </div>
+</div>
