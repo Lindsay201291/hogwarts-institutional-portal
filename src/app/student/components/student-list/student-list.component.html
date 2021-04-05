@@ -1,1 +1,27 @@
-<p>student-list works!</p>
+<!-- <p>student-list works!</p> -->
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Student List</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Patronus</th>
+            <th>Age</th>
+            <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+            <td>{{student.name}}</td>
+            <td>{{student.patronus}}</td>
+            <td>{{student.age}}</td>
+            <td>{{student.image}}</td>
+            </tr>
+        </tbody>
+        </table>
+  </div>
+</div>
