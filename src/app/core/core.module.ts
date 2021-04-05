@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CharactersService } from './services/characters/characters.service';
 import { StudentsService } from './services/students/students.service';
+import { ProfessorsService } from './services/professors/professors.service';
 
 @NgModule({
   declarations: [],
@@ -11,7 +12,8 @@ import { StudentsService } from './services/students/students.service';
   ],
   providers: [
     CharactersService,
-    StudentsService
+    StudentsService,
+    ProfessorsService
   ]
 })
 export class CoreModule { }

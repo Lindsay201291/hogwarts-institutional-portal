@@ -1,1 +1,27 @@
-<p>professor-list works!</p>
+<!-- <p>professor-list works!</p> -->
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Professor List</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Patronus</th>
+            <th>Age</th>
+            <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let professor of professors">
+            <td>{{professor.name}}</td>
+            <td>{{professor.patronus}}</td>
+            <td>{{professor.age}}</td>
+            <td>{{professor.image}}</td>
+            </tr>
+        </tbody>
+        </table>
+  </div>
+</div>
