@@ -1,6 +1,7 @@
 export interface Character {
     name: string;
     patronus: string;
-    age: number;
+    // age: number;
+    dateOfBirth: string;
     image: string;
 }

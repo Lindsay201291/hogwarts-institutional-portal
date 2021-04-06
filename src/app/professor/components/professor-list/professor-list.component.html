@@ -1,6 +1,6 @@
 <!-- <p>professor-list works!</p> -->
 
-<div class="panel panel-primary">
+<div class="panel panel-primary py-sm-5">
     <div class="panel-heading">
         <h2>Professor List</h2>
     </div>
@@ -18,7 +18,7 @@
             <tr *ngFor="let professor of professors">
                 <td>{{professor.name}}</td>
                 <td>{{professor.patronus}}</td>
-                <td>{{professor.age}}</td>
+                <td>{{professor.dateOfBirth | age}}</td>
                 <td>
                     <img [src]="professor.image" alt="" height=100 width=100>
                 </td>

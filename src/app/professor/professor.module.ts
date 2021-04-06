@@ -6,7 +6,6 @@ import { ProfessorListComponent } from './components/professor-list/professor-li
 import { ProfessorRoutingModule } from './professor-routing.module';
 import { SharedModule } from './../shared/shared.module';
 
-
 @NgModule({
   declarations: [
     ProfessorListComponent

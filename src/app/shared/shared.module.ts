@@ -4,17 +4,20 @@ import { RouterModule } from '@angular/router';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AgePipe } from './pipes/age/age.pipe';
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AgePipe
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AgePipe
   ],
   imports: [
     CommonModule,

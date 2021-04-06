@@ -11,7 +11,7 @@
       <span>{{(character.name)}}</span>
     </p>
 </div> -->
-<div class="panel panel-primary">
+<div class="panel panel-primary py-sm-5">
     <div class="panel-heading">
         <h2>Character List</h2>
     </div>
@@ -29,7 +29,7 @@
             <tr *ngFor="let character of characters">
                 <td>{{character.name}}</td>
                 <td>{{character.patronus}}</td>
-                <td>{{character.age}}</td>
+                <td>{{character.dateOfBirth | age}}</td>
                 <td>
                     <img [src]="character.image" alt="" height=100 width=100>
                 </td>
