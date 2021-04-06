@@ -14,7 +14,23 @@ export class CharactersService {
     private http: HttpClient
   ) { }
 
-  getAllCharacters() {
+  /* getAllCharacters() {
     return this.http.get<Character[]>(`${environment.url_api}/house/gryffindor`);
+  } */
+
+  getGryffindorCharacters() {
+    return this.http.get<Character[]>(`${environment.url_api}/house/gryffindor`);
+  }
+
+  getSlytherinCharacters() {
+    return this.http.get<Character[]>(`${environment.url_api}/house/slytherin`);
+  }
+
+  getRavenclawCharacters() {
+    return this.http.get<Character[]>(`${environment.url_api}/house/ravenclaw`);
+  }
+
+  getHufflepuffCharacters() {
+    return this.http.get<Character[]>(`${environment.url_api}/house/hufflepuff`);
   }
 }

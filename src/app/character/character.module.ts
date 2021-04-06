@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { CharacterListComponent } from './components/character-list/character-list.component';
 
@@ -14,7 +15,8 @@ import { SharedModule } from './../shared/shared.module';
   imports: [
     CommonModule,
     SharedModule,
-    CharacterRoutingModule
+    CharacterRoutingModule,
+    FormsModule
   ]
 })
 export class CharacterModule { }
