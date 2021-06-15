@@ -16,11 +16,13 @@ import { ProfessorListComponent } from './professor/components/professor-list/pr
 import { StudentListComponent } from './student/components/student-list/student-list.component';
 import { HomeComponent } from './home/components/home/home.component';
 import { PageNotFoundComponent } from './page-not-found/components/page-not-found/page-not-found.component';*/
+import { PageNotFoundComponent } from './page-not-found/components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent
+    LayoutComponent,
+    PageNotFoundComponent
     /*HeaderComponent,
     FooterComponent,
     CharacterListComponent,
